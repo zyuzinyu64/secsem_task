@@ -14,6 +14,7 @@
 - в файле settings.py проводим настройку переменной TEMPLATES, указываем туда путь до папки templates, в переменной DATABASES делаем изменения в соотвествии с https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/settings.py, а так же меняем переменную LANGUAGE_CODE на 'ru'
 - файл urls.py заменить на https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/urls.py
 7) Переходим в директорию приложения и вносим изменения:
-- Заменяем файл views.py на 
+- Заменяем файл views.py на https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/firstapp/views.py
+- Если нет файлы models.py, то добавляем 
 
 Терминал выдаст ссылку на главную страницу вида: "http://127.0.0.1:8000/", что является основной страницей веб-приложения
