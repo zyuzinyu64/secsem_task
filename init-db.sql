@@ -1,6 +1,6 @@
-CREATE DATABASE test_project
+CREATE DATABASE test_project;
 
-USE test_project
+USE test_project;
 
 CREATE TABLE users(
     id INT AUTO_INCREMENT PRIMARY KEY,
