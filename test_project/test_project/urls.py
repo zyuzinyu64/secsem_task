@@ -20,7 +20,7 @@ from firstapp import views
 urlpatterns = [
     path('', views.index, name='home'),
     re_path(r'^users?', views.ActiveUsersView),
-    re_path(r'^by-id\Sid=(?P<id>\d+)', views.user_data),
-    re_path(r'^by-id\Sid=admin?', views.admin_data),
+    re_path(r'^by-id$', views.UserDataByID),
+    re_path(r'^by-login$', views.UserDataByLogin),
     re_path(r'^admin?', admin.site.urls),
 ]
