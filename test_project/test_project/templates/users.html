@@ -6,12 +6,10 @@
     <body>
         <h1 align="center">Активные пользователи</h1>
         <table align="center">
-            <tr><th>Id</th><th>Login</th><th>MoneyAmount</th><th>CardNumber</th><th>Status</th></tr>
+            <tr><th>Id</th><th>Login</th><th>Status</th></tr>
             {% for person in active_list %}
             <tr><td>{{ person.id }}</td>
                 <td>{{ person.login }}</td>
-                <td>{{ person.money_amount }}</td>
-                <td>{{ person.card_number }}</td>
                 <td>{{ person.status }}</td>
             </tr>
             {% endfor %}
