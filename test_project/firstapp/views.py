@@ -15,10 +15,12 @@ def ActiveUsersView(request):
     active_list = Person.objects.filter(status=1)
     return render(request, 'users.html', {'active_list': active_list})
 
-def admin_data(request):
-    admin = Person.objects.filter(login='admin')
-    return render(request, 'admin.html', {'admin_data': admin})
+def UserDataByLogin(request):
+    login_ = str(request.GET.get('login'))
+    user_data = Person.objects.filter(login=login_)
+    return render(request, 'by_login.html', {'user_data': user_data})
 
-def user_data(request, id):
-    user_data = Person.objects.filter(id=id)
-    return render(request, 'other_users.html', {'user_data':user_data, 'id':id})
+def UserDataByID(request):
+    id_ = int(request.GET.get('id'))
+    user_data = Person.objects.filter(id=id_)
+    return render(request, 'by_id.html', {'user_data':user_data})
