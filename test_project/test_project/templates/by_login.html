@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8" />
+    <title>Активные пользователи</title>
+<head>
+    <body>
+        <h1 align='center'>Пользовательские данные по логину</h1>
+        <table align="center">
+            <tr><th>Id</th><th>Login</th><th>Status</th></tr>
+            {% for person in user_data %}
+            <tr><td>{{ person.id }}</td>
+                <td>{{ person.login }}</td>
+                <td>{{ person.status }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>    
+</head>
+</html>
