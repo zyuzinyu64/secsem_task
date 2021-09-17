@@ -11,7 +11,7 @@
 - python manage.py startapp firstapp
 6) Проводим настройку файла test_project:
 - создаем папку templates, кладём туда файлы из директории данного гита github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/templates/
-- в файле settings.py проводим настройку переменной TEMPLATES, указываем в переменную DIRS путь до папки templates, в переменной DATABASES делаем изменения в соотвествии с https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/settings.py, а так же меняем переменную LANGUAGE_CODE на 'ru'
+- в файле settings.py проводим настройку переменной TEMPLATES, указываем в переменную DIRS путь до папки templates, в переменной DATABASES делаем изменения в соотвествии с https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/settings.py, а так же меняем переменную LANGUAGE_CODE на 'ru', и добавляем в список INSTALLED_APPS приложение 'firstapp'
 - файл urls.py заменить на https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/test_project/urls.py
 7) Переходим в директорию приложения и вносим изменения:
 - Заменяем файл views.py на https://github.com/zyuzinyu64/secsem_task/blob/main/test_project/firstapp/views.py
